@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --cream: #fdfaf6;
+  --deep-cream: #f6f1eb;
+  --slate-blue: #5C677D;
+  --light-steel-blue: #b0c4de;
+  --text-dark: #2e2e2e;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--slate-blue);
+
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #fff;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2E2E2E;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--light-steel-blue);
+  text-decoration: underline;
+}
+
+.btn {
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  background-color: var(--deep-cream);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  color: var(--slate-blue);
+}
+
+.contactMe {
+  color: var(--slate-blue) !important;
+}
+
+.contactMe:hover {
+  color: var(--light-steel-blue) !important;
+}
+
+.btn-slate {
+  background-color: var(--slate-blue) !important;
+  border-color: var(--slate-blue) !important;
+  border: unset;
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.btn-slate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--light-steel-blue);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms
+}
+
+.btn-slate:hover::before {
+  width: 100%;
+}
+
+.btn-slate:hover {
+  color: white;
+}
+
+#typing-text::after {
+  content: '|';
+  animation: blink 0.7s infinite;
+  color: var(--slate-blue);
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+#preloader {
+  background: var(--cream);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact button {
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 1rem;
+  color: var(--slate-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  color: var(--light-steel-blue);
+}
+
+footer {
+  background-color: #fff;
+  padding: 1.5rem 0;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.fade-section-title {
+  opacity: 0;
+  transform: translate(10px, -20px);
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-section-title.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cynthia | Portfolio</title>
+    <link rel="shortcut icon" href="./media/portfolio favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/18ec6142ad.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <h1 class="logo ms-3"><svg width="140" height="40" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="50" fill="#5C677D" font-family="serif" font-size="60">Cynthia.dev</text>
+                </svg>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="myTime"></p>
+        </div>
+    </header>
+    <div id="preloader">
+        <div class="spinner-border" style="color: var(--slate-blue);" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <section class="text-center py-5">
+        <h1 class="display-4 fw-bold" id="typing-text"></h1>
+    </section>
+    <section class="hero fade-in text-center">
+        <div class="container">
+            <p style="font-size: 19.2px;">I design & build clean, modern websites for brands and startups.</p>
+            <a href="./myWork.html" class="btn btn-slate mb-5">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 fade-in bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title fade-section-title">Projects</h2>
+                <p class="lead text-muted">Here are a few projects I've worked on recently. Want to see more? <a
+                        class="contactMe" href="#contact">Contact me</a>.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Mailchimp Clone</h5>
+                            <img src="./media/mailchimp preview.jpg" alt="mailchimp Preview">
+                            <p class="card-text mt-3">A clean and minimal newsletter signup interface inspired by
+                                Mailchimp. Designed with focus on user experience, mobile responsiveness, and elegant
+                                typography using HTML, CSS, and Bootstrap.</p>
+                            <a href="./media/mailchimp demo.mp4" class="btn btn-slate btn-sm">Live Demo</a>
+                            <a href="#" class="btn btn-slate btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Medium Clone</h5>
+                            <img src="./media/Medium preview.jpg" alt="Medium Preview">
+                            <p class="card-text mt-3">A sleek and responsive content publishing web app inspired by
+                                responsive medium, built using HTML, CSS, and Bootstrap.</p>
+                            <a href="./media/medium demo.mp4" class="btn btn-slate btn-sm">Live Demo</a>
+                            <a href="https://seunfunmio.github.io/Medium-CLONE/" class="btn btn-slate btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">A Novel App</h5>
+                            <img src="./media/novelApp preview.jpg" alt="novelApp Preview">
+                            <p class="card-text mt-3">A mobile-friendly web app for readers and writers to input
+                                author's name, book
+                                availability, titles, and publishing years. Features a delete and edit button for each
+                                book added.</p>
+                            <a href="./media/novelApp demo.mp4" class="btn btn-slate btn-sm">Live Demo</a>
+                            <a href="https://seunfunmio.github.io/Book-Application/"
+                                class="btn btn-slate btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 fade-in bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title fade-section-title">Services</h2>
+                <p class="lead text-muted">Here’s what I can offer you:</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Web Design</h4>
+                            <p class="card-text mt-3">Clean, beautiful, responsive design for all devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Frontend Development</h4>
+                            <p class="card-text mt-3">Responsive and engaging UI using HTML, CSS, JavaScript, Bootstrap
+                                & React.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Backend Development</h4>
+                            <p class="card-text mt-3">Robust backend systems with Firebase, Node.js, and database
+                                integration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">UI/UX Design</h4>
+                            <p class="card-text mt-3">Clean and intuitive designs for better user engagement and
+                                experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Firebase Integration</h4>
+                            <p class="card-text mt-3">Authentication, Firestore, and real-time data apps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 fade-in bg-light">
+        <div class="container">
+            <div class="about text-center mb-5">
+                <h2 class="display-5 fw-bold section-title fade-section-title">About Me</h2>
+                <p>I'm Cynthia, a passionate web developer blending creativity with
+                    functionality. I enjoy building
+                    user-friendly interfaces and powerful experiences with HTML, CSS, JavaScript, and Firebase. Let's
+                    build
+                    something amazing together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact fade-in py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold section-title fade-section-title text-center">Contact</h2>
+            <p class="lead text-muted text-center">Have a project in mind or just want to connect?</p>
+            <form action="https://formspree.io/f/xeozgkgq" method="POST" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea rows="5" name="Message" placeholder="Your Message..." required></textarea>
+                <div id="statusMessage" class="mt-3 text-success" style="display:none;">Message sent successfully!</div>
+                <button class="btn-slate" type="submit">Send Message</button>
+            </form>
+            <div class="socials">
+                <a href="https://www.instagram.com/meetseun.funmi/profilecard/?igsh=MTdxaGNmOWdpeWUzNg=="><i
+                        class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="https://github.com/SeunfunmiO"><i class="fa-brands fa-github fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/cynthia-omisore"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cynthia. Built with <i class="fa-solid fa-heart" style="color: var(--slate-blue);"></i> by
+                Me.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        const text = "Hi, I'm Cynthia — a fullstack Web Developer.";
+        let index = 0;
+        function typeText() {
+            if (index < text.length) {
+                document.getElementById("typing-text").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+                typeText();
+            }, 1500);
+        });
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setInterval(() => {
+                let dateTime = new Date()
+                let dateOption = {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                }
+
+                let timeOption = {
+                    hour: "2-digit",
+                    second: "numeric",
+                    minute: "numeric",
+                    hour12: false
+                }
+                let date = dateTime.toLocaleString(undefined, dateOption)
+                let time = dateTime.toLocaleString(undefined, timeOption)
+                document.getElementById('myTime').innerHTML = `${date} , ${time}`
+
+            }, 1000)
+        })
+
+
+        document.getElementById("contactForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const statusMessage = document.getElementById("statusMessage");
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    statusMessage.style.display = 'block';
+                    form.reset();
+                    setTimeout(() => {
+                        statusMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    statusMessage.textContent = "Oops! Something went wrong. Please try again.";
+                    statusMessage.classList.replace("text-success", "text-danger");
+                    statusMessage.style.display = 'block';
+                }
+            } catch (error) {
+                statusMessage.textContent = "There was a problem submitting the form.";
+                statusMessage.classList.replace("text-success", "text-danger");
+                statusMessage.style.display = 'block';
+                console.error(error);
+            }
+        });
+
+
+        const sectionTitles = document.querySelectorAll('.fade-section-title');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        sectionTitles.forEach(title => {
+            observer.observe(title);
+        });
+
+    </script>
+</body>
+
+</html>
