@@ -264,8 +264,9 @@ footer {
   }
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   #myTime {
     display: block;
+    margin-left: 10px;
   }
-}
+} */
